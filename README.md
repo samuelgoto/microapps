@@ -2,7 +2,7 @@
 permalink: index.html
 ---
 
-microapps is an early proposal to extend [schema.org](https://schema.org) with a presentation-based markup language (akin to HTML) that enables creating domain-agnostic interactable snippets in search engines (i.e. within their security and consistency constrains).
+microapps is an early **proposal** to extend [schema.org](https://schema.org) with a presentation-based markup language (akin to HTML) that enables creating domain-agnostic interactable snippets in search engines (i.e. within their security and consistency constrains).
 
 The XML-based notation is designed to de-couple application-specific factual semantics in schema.org (e.g. [restaurants](http://schema.org/Restaurant), [museums](http://schema.org/Museum), [people](http://schema.org/Person) and [actions](http://schema.org/Action)) with general-purpose presentation building blocks (e.g. paragraphs, text formatting, lists, headers, footers and forms), while still enabling their association.
 
@@ -14,9 +14,9 @@ The XML-based notation is designed to de-couple application-specific factual sem
     itemscope
     itemtype="http://schema.org/ReserveAction"
     action="/create.php">
-    <label for="name">
-    <input itemprop="agent name" name="name">
-    <input type="button">
+    <label for="name"></label>
+    <input itemprop="agent name" name="name"></input>
+    <input type="button"></input>
   </form>
 </doc>
 ```

@@ -69,5 +69,42 @@
     })();
     </script>
 
+    <style>
+      .language-xml {
+        margin-left: -200px;
+        width: 1100px;
+        border: 1px solid red;
+      }
+      .highlight {
+        float: left;
+      }
+      .snippet {
+        float: right;
+        border: 1px solid black;
+        width: 400px;
+        right: 0px;
+      }
+    </style>
+
+    <script>
+      // console.log("hello world");
+      document.querySelectorAll(".language-xml").forEach(function(code) {
+        // console.log(code.innerText);
+        let box = code.getBoundingClientRect();
+        let node = document.createElement("div");
+        let source = code.innerText
+          .replace(/<(?!\/)/g, "<micro-")
+          .replace(/<\//g, "</micro-");
+        // console.log(source);
+        node.innerHTML = source;
+        node.className = "snippet";
+        code.appendChild(node);
+        let clear = document.createElement("div");
+        clear.style = "clear: both;";
+        code.appendChild(clear);
+      });
+      
+    </script>
+
   </body>
 </html>
