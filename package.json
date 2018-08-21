@@ -1,0 +1,24 @@
+{
+  "name": "microapps",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha -w tests",
+    "start": "node demo/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelgoto/microapps.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/samuelgoto/microapps/issues"
+  },
+  "homepage": "https://github.com/samuelgoto/microapps",
+  "dependencies": {
+    "@material/mwc-icon": "^0.1.2",
+    "@webcomponents/webcomponentsjs": "^2.0.3",
+    "express": "^4.16.3",
+    "polymer-cli": "^1.7.7"
+  }
+}
